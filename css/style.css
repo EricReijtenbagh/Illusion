@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F4E4DC;
+    align-items: center;
+    
+}
+
+.logo{
+    height: 6rem;
+    width: auto;
+}
