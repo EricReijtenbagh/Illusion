@@ -78,6 +78,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
 }
@@ -176,4 +177,57 @@ h3 {
     transition: .3s;
     opacity: 0.7;
     cursor: pointer;
+}
+
+.steps{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.steps1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.steps2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.steps3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.steps4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.stepimg{
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+}
+
+.stepStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+h4{
+    font-size: 3rem;
+}
+
+.steptext{
+    font-size: 2.5rem;
+}
+.midheader{
+    font-size: 5rem;
+    text-align: center;
 }
