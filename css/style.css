@@ -12,23 +12,29 @@ html {
 header {
     height: auto;
     display: flex;
-    justify-content: space-evenly;
     background-color: #F4E4DC;
     align-items: center;
-
+    gap: 3rem;
+    font-size: 3rem;
 }
-/* thumbnail/top */
+
+.right{
+    margin-right: 3rem;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
 .logo {
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
     width: auto;
 }
 
-
+/* thumbnail top */
 .thumbnail {
     height: 100%;
     width: 100%;
@@ -149,35 +155,6 @@ li {
     height: 100%;
 }
 
-h3 {
-    position: absolute;
-    top: 4rem;
-    font-size: 5rem;
-    background: black;
-    color: white;
-    font-family: Montserrat, 'MS Sans Serif', Geneva, sans-serif;
-    padding: .3rem;
-}
-
-.h3 {
-    display: flex;
-    justify-content: center;
-}
-
-.cardButton {
-    position: absolute;
-    background: black;
-    color: white;
-    top: 12rem;
-    font-size: 2rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-}
-
-.cardButton:hover {
-    transition: .3s;
-    opacity: 0.7;
-    cursor: pointer;
-}
 /* stappenplan */
 .steps{
     display: grid;
@@ -231,6 +208,7 @@ h4{
     font-size: 5rem;
     text-align: center;
 }
+
 /* slider/function */
 .image-slider {
     margin-left: 0rem;
@@ -290,6 +268,7 @@ h4{
     height: 100%;
     width: auto;
     left: 30rem;
+    top: -6rem;
 }
 
 .fa-brands {
@@ -301,7 +280,7 @@ h4{
 .footerlogos{
     position: absolute;
     left: 38rem;
-    top: 17rem;
+    top: 11rem;
     height: 100%;
     width: auto;
 
@@ -317,11 +296,29 @@ h4{
 }
 
 .signup-txt{
+    position: absolute;
     font-size: 2rem;
+    left: 80rem;
+    top: 5rem;
 }
 .signup-email{
+    position: absolute;
     width: 20rem;
+    left: 80rem;
+    top: 10rem;
+    border: none;
+    border-bottom: 1px black solid;
+    background: #F4E4DC;
+    padding: 1rem;
 }
 .signup-button{
+    position: absolute;
     width: 20rem;
+    left: 80rem;
+    top: 15rem;
+    background: black;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    cursor: pointer;
 }
