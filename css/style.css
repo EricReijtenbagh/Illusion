@@ -8,6 +8,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
 /* header */
 header {
     height: auto;
@@ -18,7 +19,7 @@ header {
     font-size: 3rem;
 }
 
-.right{
+.right {
     margin-right: 3rem;
 }
 
@@ -156,18 +157,18 @@ li {
 }
 
 /* stappenplan */
-.steps{
+.steps {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
-.steps1{
+.steps1 {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.steps2{
+.steps2 {
     grid-column: 2/3;
     grid-row: 1/2;
 }
@@ -182,13 +183,13 @@ li {
     grid-row: 2/3;
 }
 
-.stepimg{
+.stepimg {
     border-radius: 50%;
     height: 20rem;
     width: 20rem;
 }
 
-.stepStyle{
+.stepStyle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,14 +198,15 @@ li {
     flex-direction: column;
 }
 
-h4{
+h4 {
     font-size: 3rem;
 }
 
-.steptext{
+.steptext {
     font-size: 2.5rem;
 }
-.midheader{
+
+.midheader {
     font-size: 5rem;
     text-align: center;
 }
@@ -231,12 +233,13 @@ h4{
     resize: horizontal;
     top: 0;
 }
-.imgbefore{
+
+.imgbefore {
     height: 40rem;
     width: auto;
 }
 
-.functiontext{
+.functiontext {
     font-size: 4rem;
     color: black;
     text-align: left;
@@ -245,11 +248,13 @@ h4{
     left: 20rem;
     width: 60rem;
 }
-.functionpart{
+
+.functionpart {
     position: relative;
 }
+
 /* reviewstuk */
-.reviews{
+.reviews {
     background: #F4E4DC;
     height: 60rem;
     border-radius: 5px;
@@ -257,18 +262,19 @@ h4{
 }
 
 /* footer */
-.footer{
+footer {
     background: #F4E4DC;
     height: 30rem;
-    position: relative;
+    display: flex;
+    padding: 5rem;
+    gap: 2rem;
+    justify-content: center;
 }
 
-.footerimg{
-    position: absolute;
+.footerimg {
     height: 100%;
     width: auto;
-    left: 30rem;
-    top: -6rem;
+
 }
 
 .fa-brands {
@@ -277,48 +283,56 @@ h4{
     padding: 2rem 1rem 2rem 1rem;
 }
 
-.footerlogos{
-    position: absolute;
-    left: 38rem;
-    top: 11rem;
+.footerlogos {
     height: 100%;
     width: auto;
 
 }
 
-.fa-brands:hover{
+.fa-brands:hover {
     background-color: black;
     transition: 0.5s;
 }
-.signup{
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.signup>form {
     display: flex;
     flex-direction: column;
 }
 
-.signup-txt{
-    position: absolute;
+.signup-txt {
     font-size: 2rem;
-    left: 80rem;
-    top: 5rem;
 }
-.signup-email{
-    position: absolute;
+
+.signup-email {
     width: 20rem;
-    left: 80rem;
-    top: 10rem;
     border: none;
     border-bottom: 1px black solid;
     background: #F4E4DC;
     padding: 1rem;
 }
-.signup-button{
-    position: absolute;
+
+.signup-button {
     width: 20rem;
-    left: 80rem;
-    top: 15rem;
     background: black;
     color: white;
     font-size: 1.6rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
     cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-txt {
+    display: flex;
+    font-size: 3rem;
 }
