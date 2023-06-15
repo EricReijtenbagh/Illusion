@@ -50,13 +50,18 @@ a {
 
 /* footer */
 footer {
+    width: 100%;
+}
+.kutjebef{
     background: #F4E4DC;
     height: 30rem;
+    width: 100%;
     display: flex;
     padding: 5rem;
     gap: 2rem;
     justify-content: center;
 }
+
 
 .footerimg {
     height: 100%;
@@ -117,9 +122,42 @@ footer {
 .contact {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .contact-txt {
     display: flex;
     font-size: 3rem;
+}
+
+
+@media screen and (max-width: 70rem) {
+    .kutjebef{
+        padding: 2rem;
+        gap: 1rem;
+    }
+    .footerimg {
+        height: 50%;
+        width: auto;
+    
+    }
+    .signup{
+        justify-content: center;
+    }
+    .signup-button {
+        width: 10rem;
+    }
+    .signup-email {
+        width: 10rem;
+
+    }
+    .signup-txt {
+        font-size: 1rem;
+    }
+    .contact{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
 }

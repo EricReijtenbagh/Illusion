@@ -66,7 +66,7 @@ h1 {
 }
 
 .grotePic {
-    height: 100%;
+    height: auto%;
     width: 100%;
 }
 
@@ -115,9 +115,6 @@ li {
 }
 
 .headlineButton {
-    position: absolute;
-    left: 105rem;
-    bottom: -27rem;
     font-size: 4rem;
     color: white;
     background: #212121;
@@ -136,26 +133,6 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-}
-
-.steps1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.steps2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.steps3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.steps4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
 }
 
 .stepimg {
@@ -192,7 +169,6 @@ h4 {
     position: relative;
     display: inline-block;
     line-height: 100%;
-    left: 90rem;
 }
 
 .image-slider img {
@@ -218,15 +194,22 @@ h4 {
     font-size: 4rem;
     color: black;
     text-align: left;
-    position: absolute;
-    top: 0rem;
-    left: 20rem;
-    width: 60rem;
 }
 
 .functionpart {
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
 }
+
+.functionimage{
+    columns: 1/2;
+}
+.functiontext {
+    columns: 1/2;
+}
+
+
 
 /* reviewstuk */
 .reviews {
@@ -236,3 +219,79 @@ h4 {
     margin: 5%;
 }
 
+@media screen and (max-width: 90rem) {
+    body {
+        background-color: red;
+    }
+    .image-slider img {
+    max-width: 45rem;
+    height: 45rem;
+    }
+}
+
+
+
+@media screen and (max-width: 80rem) {
+    body {
+        background-color: blue;
+    }
+    .image-slider img {
+        max-width: 40rem;
+        height: 40rem;
+    }
+}
+
+
+
+@media screen and (max-width: 70rem) {
+    body {
+        background-color: purple;
+    }
+
+    .steps {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .image-slider img {
+        max-width: 35rem;
+        height: 35rem;
+    }
+}
+
+
+
+@media screen and (max-width: 60rem) {
+    body {
+        background-color: green;
+    }
+    .image-slider img {
+        max-width: 30rem;
+        height: 30rem;
+    }
+}
+
+
+
+@media screen and (max-width: 50rem) {
+    body {
+        background-color: yellow;
+    }
+    .image-slider img {
+        max-width: 25rem;
+        height: 25rem;
+    }
+}
+
+
+
+@media screen and (max-width: 40rem) {
+    body {
+        background-color: orange;
+    }
+    .image-slider img {
+        max-width: 20rem;
+        height: 20rem;
+    }
+}
+
+;
