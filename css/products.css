@@ -21,6 +21,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 3rem;
     color: rgb(0, 0, 0);
 
 }
