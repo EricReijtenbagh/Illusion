@@ -15,8 +15,6 @@ body {
     font-family: sans-serif;
     font-size: 2rem;
     background: #eee;
-    padding: 8rem;
-    overflow: hidden;
     mix-blend-mode: darken;
 }
 
@@ -47,12 +45,12 @@ main {
 
 .inputs {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     gap: 4rem;
     width: 100%;
     margin-bottom: 4rem;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .inputs>div {
