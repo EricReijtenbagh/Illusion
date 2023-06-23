@@ -17,7 +17,7 @@ html {
     object-fit: cover;
 }
 
-h1 {
+.slogan {
     position: absolute;
     left: 5rem;
     top: 3rem;
@@ -211,15 +211,6 @@ h4 {
     columns: 1/2;
 }
 
-
-
-/* reviewstuk */
-.reviews {
-    background: #F4E4DC;
-    height: 60rem;
-    border-radius: 5px;
-    margin: 5%;
-}
 
 @media screen and (max-width: 90rem) {
     body {
