@@ -12,7 +12,9 @@ html {
 li {
     list-style: none;
 }
-
+body{
+    scroll-behavior: smooth;
+}
 
 
 /* product1 */
@@ -36,7 +38,7 @@ h1 {
 .colorpallet {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3.5, 1fr);
     gap: 2rem;
     margin: 5rem;
 }
@@ -92,7 +94,38 @@ h1 {
     height: 50%;
 }
 
+.shoetype{
+    cursor: pointer;
+    border: 0;
+    color: #DEC4AF;
+    background: white;
+    max-width: 10rem;
+}
 
+.activeshoe{
+    border: 5px solid #DEC4AF;
+}
+
+.cardimg:hover{
+    transform: scale(1.5);
+}
+.card{
+    grid-row: 3/3;
+    grid-column: 1/5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.cardimg{
+    transition: transform 350ms ease-in-out; 
+    width: 100%;
+}
+a{
+    all: none;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -193,6 +226,7 @@ button {
     padding: 1.5rem 1rem 1.5rem 1rem;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
 
 
