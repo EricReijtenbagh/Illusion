@@ -94,8 +94,8 @@ h1 {
 }
 
 .shoppingcart {
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 100%;
 }
 
 .shoetype {
@@ -313,5 +313,17 @@ button {
         grid-column: 1/2;
         grid-row: 3/4;
         padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 50rem){
+    .card{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 90rem){
+    .card{
+        display: none;
     }
 }
