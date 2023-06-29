@@ -12,8 +12,10 @@ html {
 li {
     list-style: none;
 }
-body{
+
+body {
     scroll-behavior: smooth;
+    mix-blend-mode: darken;
 }
 
 
@@ -27,9 +29,11 @@ h1 {
     color: rgb(0, 0, 0);
 
 }
-.shoes{
+
+.shoes {
     padding-left: 2rem;
 }
+
 .shoe {
     height: 30rem;
     width: 100%;
@@ -84,17 +88,17 @@ h1 {
     height: 6rem;
     width: 6rem;
 }
- 
-.active{
+
+.active {
     border-radius: 0%;
 }
 
-.shoppingcart{
+.shoppingcart {
     width: 40%;
     height: 50%;
 }
 
-.shoetype{
+.shoetype {
     cursor: pointer;
     border: 0;
     color: #DEC4AF;
@@ -102,14 +106,15 @@ h1 {
     max-width: 10rem;
 }
 
-.activeshoe{
+.activeshoe {
     border: 5px solid #DEC4AF;
 }
 
-.cardimg:hover{
+.cardimg:hover {
     transform: scale(1.5);
 }
-.card{
+
+.card {
     grid-row: 3/3;
     grid-column: 1/5;
     cursor: pointer;
@@ -119,11 +124,12 @@ h1 {
     gap: 5rem;
 }
 
-.cardimg{
-    transition: transform 350ms ease-in-out; 
+.cardimg {
+    transition: transform 350ms ease-in-out;
     width: 100%;
 }
-a{
+
+a {
     all: none;
 }
 
@@ -229,6 +235,59 @@ button {
     cursor: pointer;
 }
 
+.card1 {
+    grid-column: 1/3;
+    grid-row: 1/1;
+}
+
+#added {
+    background: #D9B6C0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(195, 195, 195, 0.84);
+    opacity: 0;
+    z-index: 5;
+}
+
+.fadeIn {
+    animation-name: added;
+    animation-duration: 3s;
+}
+
+.noti {
+    color: white;
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes added {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 

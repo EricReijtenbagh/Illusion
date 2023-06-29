@@ -66,3 +66,4 @@ Jordan4.onchange = function () {
         }
     }//laat list items verdwijnen
 }
+
